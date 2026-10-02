@@ -511,25 +511,31 @@ ul, ol {
 /* --------------------------------------------------------------------------
    6. HERO SECTION
    -------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------
+   6. HERO SECTION
+   -------------------------------------------------------------------------- */
 .hero-section {
   min-height: calc(100vh - var(--nav-height));
   display: flex;
   align-items: center;
-  padding-top: calc(var(--nav-height) + 2.5rem);
-  padding-bottom: 5rem;
+  justify-content: center;
+  padding-top: calc(var(--nav-height) + 3.5rem);
+  padding-bottom: 5.5rem;
+  position: relative;
 }
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  align-items: center;
-  gap: var(--space-3xl);
+.hero-container {
+  display: flex;
+  justify-content: center;
 }
 
-.hero-content {
+.hero-wrapper {
+  max-width: 860px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
 }
 
 /* Status Pill */
@@ -537,7 +543,7 @@ ul, ol {
   display: inline-flex;
   align-items: center;
   gap: 0.625rem;
-  padding: 0.375rem 0.875rem;
+  padding: 0.4375rem 1rem;
   background: var(--bg-card);
   border: 1px solid var(--border-medium);
   border-radius: var(--radius-full);
@@ -545,7 +551,7 @@ ul, ol {
   font-size: 0.75rem;
   font-weight: 500;
   color: var(--text-secondary);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
   box-shadow: var(--shadow-sm);
 }
 
@@ -577,31 +583,33 @@ ul, ol {
 /* Hero Typography */
 .hero-title {
   font-family: var(--font-display);
-  font-size: clamp(2.75rem, 5.5vw, 4.25rem);
+  font-size: clamp(3.25rem, 7vw, 5.25rem);
   font-weight: 800;
-  line-height: 1.08;
-  letter-spacing: -0.035em;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
   color: var(--text-primary);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .hero-role {
   font-family: var(--font-display);
-  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-size: clamp(1.375rem, 2.75vw, 2rem);
   font-weight: 600;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
   background: var(--accent-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 .hero-intro {
-  font-size: clamp(1.0625rem, 1.25vw, 1.1875rem);
-  line-height: 1.7;
+  font-size: clamp(1.125rem, 1.4vw, 1.25rem);
+  line-height: 1.75;
   color: var(--text-secondary);
-  max-width: 580px;
-  margin-bottom: 1.5rem;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.75rem;
 }
 
 /* Subtle Location Tag */
@@ -613,7 +621,10 @@ ul, ol {
   font-size: 0.8125rem;
   color: var(--text-tertiary);
   margin-bottom: 2.25rem;
-  padding: 0.375rem 0;
+  padding: 0.375rem 0.875rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
 }
 
 .hero-location svg {
@@ -625,8 +636,10 @@ ul, ol {
 .hero-cta-cluster {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 0.875rem;
+  gap: 1rem;
+  margin-bottom: 4rem;
 }
 
 .btn {
@@ -637,7 +650,7 @@ ul, ol {
   font-family: var(--font-body);
   font-size: 0.9375rem;
   font-weight: 600;
-  padding: 0.8125rem 1.5rem;
+  padding: 0.8125rem 1.625rem;
   border-radius: var(--radius-md);
   transition: all var(--transition-fast);
   white-space: nowrap;
@@ -683,118 +696,65 @@ ul, ol {
   transform: translateY(-2px);
 }
 
-/* Hero Visual / Profile Image Container */
-.hero-visual {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.portrait-wrapper {
-  position: relative;
+/* Hero Foundation Deck (Architectural Anchors) */
+.hero-foundation-deck {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
   width: 100%;
-  max-width: 380px;
+  max-width: 860px;
+  text-align: left;
 }
 
-.portrait-ambient-glow {
-  position: absolute;
-  inset: -12px;
-  background: radial-gradient(circle at 50% 40%, rgba(56, 189, 248, 0.22) 0%, rgba(129, 140, 248, 0.15) 40%, transparent 70%);
-  filter: blur(32px);
-  z-index: 1;
-  opacity: 0.75;
-  transition: opacity var(--transition-smooth);
-}
-
-.portrait-wrapper:hover .portrait-ambient-glow {
-  opacity: 1;
-}
-
-.portrait-card {
-  position: relative;
-  z-index: 2;
+.foundation-deck-card {
   background: var(--bg-card);
-  border: 1px solid var(--border-medium);
-  border-radius: var(--radius-xl);
-  padding: 0.625rem;
-  box-shadow: var(--shadow-lg);
-  overflow: hidden;
-  transition: border-color var(--transition-base), transform var(--transition-base);
-}
-
-.portrait-wrapper:hover .portrait-card {
-  border-color: rgba(56, 189, 248, 0.4);
-  transform: translateY(-4px);
-}
-
-.portrait-image-container {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  border-radius: calc(var(--radius-xl) - 4px);
-  overflow: hidden;
-  background: #0d121c;
-}
-
-.portrait-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 20%;
-  display: block;
-  transition: transform var(--transition-smooth), filter var(--transition-smooth);
-}
-
-.portrait-wrapper:hover .portrait-img {
-  transform: scale(1.025);
-}
-
-/* Portrait Technical Badges */
-.portrait-badge-bottom {
-  position: absolute;
-  bottom: 1.25rem;
-  left: 1.25rem;
-  right: 1.25rem;
-  background: rgba(12, 16, 23, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: var(--radius-md);
-  padding: 0.75rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 3;
-}
-
-.portrait-badge-info {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  transition: all var(--transition-base);
   display: flex;
   flex-direction: column;
+  gap: 0.375rem;
+  position: relative;
+  overflow: hidden;
 }
 
-.portrait-badge-title {
+.foundation-deck-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.3), transparent);
+}
+
+.foundation-deck-card:hover {
+  border-color: var(--border-medium);
+  background: var(--bg-card-hover);
+  transform: translateY(-2px);
+}
+
+.deck-kicker {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  letter-spacing: 0.05em;
+}
+
+.deck-title {
   font-family: var(--font-display);
-  font-size: 0.8125rem;
+  font-size: 1.0625rem;
   font-weight: 700;
   color: var(--text-primary);
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
-.portrait-badge-sub {
-  font-family: var(--font-mono);
-  font-size: 0.6875rem;
-  color: var(--accent-cyan);
-}
-
-.portrait-badge-tag {
-  font-family: var(--font-mono);
-  font-size: 0.6875rem;
+.deck-desc {
+  font-size: 0.8125rem;
   color: var(--text-tertiary);
-  background: rgba(255, 255, 255, 0.05);
-  padding: 0.25rem 0.5rem;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border-subtle);
+  line-height: 1.45;
 }
 
 /* --------------------------------------------------------------------------
@@ -1755,21 +1715,6 @@ ul, ol {
    15. RESPONSIVE MEDIA QUERIES
    -------------------------------------------------------------------------- */
 @media (max-width: 1024px) {
-  .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-    text-align: left;
-  }
-
-  .hero-visual {
-    order: -1;
-    justify-content: flex-start;
-  }
-
-  .portrait-wrapper {
-    max-width: 320px;
-  }
-
   .about-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -1808,11 +1753,16 @@ ul, ol {
   }
 
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
   }
 
   .hero-role {
     font-size: 1.25rem;
+  }
+
+  .hero-foundation-deck {
+    grid-template-columns: 1fr;
+    gap: 0.875rem;
   }
 
   .skills-grid {
@@ -1871,10 +1821,6 @@ ul, ol {
 
   .hero-cta-cluster .btn {
     width: 100%;
-  }
-
-  .portrait-wrapper {
-    max-width: 100%;
   }
 }
 

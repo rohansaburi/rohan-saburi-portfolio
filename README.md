@@ -39,7 +39,6 @@ rohan-saburi-portfolio/
 │   └── workflows/
 │       └── deploy.yml        # GitHub Actions automated workflow for Pages
 ├── assets/
-│   ├── profile.jpg           # High-resolution portrait photograph
 │   └── favicon.svg           # Monogram vector favicon
 ├── css/
 │   └── style.css             # Unified design system, tokens, and responsive layout
