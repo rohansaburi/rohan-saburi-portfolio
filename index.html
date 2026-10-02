@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO & Social Meta Tags -->
+  <title>Rohan Saburi | Aspiring Software Engineer</title>
+  <meta name="description" content="Personal portfolio of Rohan Saburi — Aspiring Software Engineer and 2nd-year B.Tech CSE student at REVA University. Building strong foundations in programming, DSA, SQL, and cloud technologies.">
+  <meta name="author" content="Rohan Saburi">
+  <meta name="keywords" content="Rohan Saburi, Software Engineer, REVA University, B.Tech CSE, Bengaluru, Java, Python, C, SQL, DSA, Cloud">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rohan Saburi | Aspiring Software Engineer">
+  <meta property="og:description" content="Building strong foundations in software engineering, problem solving, and modern technologies.">
+  <meta property="og:image" content="assets/profile.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rohan Saburi | Aspiring Software Engineer">
+  <meta name="twitter:description" content="Building strong foundations in software engineering, problem solving, and modern technologies.">
+  <meta name="twitter:image" content="assets/profile.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+
+  <!-- Fonts: Plus Jakarta Sans (Headings), Inter (Body), JetBrains Mono (Code/Metadata) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Dark Mode Background Lighting -->
+  <div class="bg-ambient" aria-hidden="true">
+    <div class="ambient-light-1"></div>
+    <div class="ambient-light-2"></div>
+    <div class="ambient-light-3"></div>
+    <div class="bg-grid-overlay"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo" aria-label="Rohan Saburi Home">
+        <span class="nav-logo-badge">RS</span>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">Rohan Saburi</span>
+          <span class="nav-logo-sub">aspiring swe</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Desktop Header Actions -->
+      <div class="nav-actions">
+        <a href="#contact" class="nav-cta-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+          </svg>
+          <span>Get in Touch</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu Overlay -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <ul class="mobile-nav-list">
+      <li><a href="#home" class="mobile-nav-link">Home</a></li>
+      <li><a href="#about" class="mobile-nav-link">About</a></li>
+      <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+      <li><a href="#education" class="mobile-nav-link">Education</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <p class="mobile-drawer-location">Bengaluru, India · Hyderabad, Telangana</p>
+    </div>
+  </div>
+
+  <main id="mainContent">
+
+    <!-- ====================================================================
+         HERO SECTION
+         ==================================================================== -->
+    <section class="section hero-section" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Text Details -->
+          <div class="hero-content reveal-init">
+            <div class="hero-status-pill">
+              <span class="status-dot-pulse" aria-hidden="true"></span>
+              <span>Developing Foundations &middot; 2nd Year B.Tech CSE</span>
+            </div>
+
+            <h1 class="hero-title">Rohan Saburi</h1>
+            <div class="hero-role">Aspiring Software Engineer</div>
+
+            <p class="hero-intro">
+              Building strong foundations in software engineering, problem solving, and modern technologies &mdash; while learning, experimenting, and turning ideas into projects.
+            </p>
+
+            <div class="hero-location">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Based in Bengaluru, India &middot; Originally from Hyderabad, Telangana</span>
+            </div>
+
+            <div class="hero-cta-cluster">
+              <a href="#projects" class="btn btn-primary" id="heroViewProjectsBtn">
+                <span>View Projects</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="m6 9 6 6 6-6"></path>
+                </svg>
+              </a>
+
+              <a href="https://github.com/rohansaburi" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="heroGithubBtn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/>
+                </svg>
+                <span>GitHub</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17 17 7"></path>
+                  <path d="M7 7h10v10"></path>
+                </svg>
+              </a>
+
+              <a href="#contact" class="btn btn-tertiary" id="heroContactBtn">
+                <span>Contact Me</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Profile Image Presentation -->
+          <div class="hero-visual reveal-init delay-1">
+            <div class="portrait-wrapper">
+              <div class="portrait-ambient-glow" aria-hidden="true"></div>
+              
+              <div class="portrait-card">
+                <div class="portrait-image-container">
+                  <img 
+                    src="assets/profile.jpg" 
+                    alt="Portrait of Rohan Saburi - Aspiring Software Engineer" 
+                    class="portrait-img"
+                    width="600"
+                    height="750"
+                    loading="eager"
+                  >
+                </div>
+
+                <div class="portrait-badge-bottom">
+                  <div class="portrait-badge-info">
+                    <span class="portrait-badge-title">Rohan Saburi</span>
+                    <span class="portrait-badge-sub">B.Tech CSE &middot; REVA Univ</span>
+                  </div>
+                  <span class="portrait-badge-tag">2025&ndash;2029</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         ABOUT SECTION
+         ==================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        
+        <div class="section-header reveal-init">
+          <div class="section-kicker">
+            <span>// 01. About Me</span>
+          </div>
+          <h2 class="section-title">Developing strong engineering foundations through curiosity and practice.</h2>
+          <p class="section-subtitle">
+            An aspiring software engineer focused on core computer science fundamentals, methodical problem solving, and building practical software.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Narrative Column -->
+          <div class="about-text-content reveal-init">
+            <p class="about-lead">
+              I am currently a 2nd-year B.Tech Computer Science &amp; Engineering student at REVA University, dedicated to developing deep, lasting software engineering foundations.
+            </p>
+
+            <p class="about-paragraph">
+              My journey is rooted in understanding how systems work beneath high-level abstractions. Rather than jumping between superficial frameworks, I concentrate on learning how memory, data structures, and algorithms operate together to power resilient software.
+            </p>
+
+            <p class="about-paragraph">
+              I am actively learning programming across C, Java, and Python, exploring relational databases with SQL, studying cloud technologies, and strengthening my analytical problem-solving skills every day through consistent practice and hands-on projects.
+            </p>
+
+            <p class="about-paragraph">
+              I am currently in the learning and building phase of my career &mdash; experimenting with new concepts, dissecting software architectures, and continuously improving my craft with humility and curiosity.
+            </p>
+
+            <!-- Core Engineering Pillars -->
+            <div class="about-pillars">
+              <div class="about-pillar-card">
+                <div class="about-pillar-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m18 16 4-4-4-4"></path>
+                    <path d="m6 8-4 4 4 4"></path>
+                    <path d="m14.5 4-5 16"></path>
+                  </svg>
+                </div>
+                <h3 class="about-pillar-title">First-Principles Thinking</h3>
+                <p class="about-pillar-desc">Focusing on fundamentals, memory models, data structures, and algorithmic efficiency.</p>
+              </div>
+
+              <div class="about-pillar-card">
+                <div class="about-pillar-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="m4.93 4.93 4.24 4.24"></path>
+                    <path d="m14.83 9.17 4.24-4.24"></path>
+                    <path d="m14.83 14.83 4.24 4.24"></path>
+                    <path d="m9.17 14.83-4.24 4.24"></path>
+                    <circle cx="12" cy="12" r="4"></circle>
+                  </svg>
+                </div>
+                <h3 class="about-pillar-title">Learning by Building</h3>
+                <p class="about-pillar-desc">Solidifying theoretical concepts through real code, experimentation, and project work.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic & Context Card -->
+          <div class="about-fact-card reveal-init delay-1">
+            <div class="about-fact-header">
+              <span class="about-fact-label">Academic Profile</span>
+              <span class="about-fact-indicator">
+                <span class="status-dot-pulse" style="width: 6px; height: 6px;" aria-hidden="true"></span>
+                <span>Active Student</span>
+              </span>
+            </div>
+
+            <div class="about-fact-list">
+              <div class="about-fact-item">
+                <span class="fact-title">Current Program</span>
+                <span class="fact-value">B.Tech in Computer Science &amp; Engineering</span>
+                <span class="fact-subtext">REVA University &middot; Bengaluru</span>
+              </div>
+
+              <div class="about-fact-item">
+                <span class="fact-title">Academic Stage</span>
+                <span class="fact-value">2nd Year</span>
+                <span class="fact-subtext">Expected Graduation: 2029</span>
+              </div>
+
+              <div class="about-fact-item">
+                <span class="fact-title">Geographic Roots</span>
+                <span class="fact-value">Bengaluru, Karnataka</span>
+                <span class="fact-subtext">Originally from Hyderabad, Telangana</span>
+              </div>
+
+              <div class="about-fact-item">
+                <span class="fact-title">Current Objective</span>
+                <span class="fact-value">Foundational Software Engineering</span>
+                <span class="fact-subtext">Building durable skills across systems, data, and algorithms</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SKILLS / TECHNICAL FOCUS SECTION
+         ==================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        
+        <div class="section-header reveal-init">
+          <div class="section-kicker">
+            <span>// 02. Technical Focus</span>
+          </div>
+          <h2 class="section-title">Technologies &amp; areas I am actively learning.</h2>
+          <p class="section-subtitle">
+            A transparent overview of the core technologies, systems, and engineering competencies I am currently developing and exploring.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Programming -->
+          <div class="skill-category-card reveal-init">
+            <div class="skill-card-top">
+              <div class="skill-category-meta">
+                <span class="skill-category-number">01 // CORE LANGUAGES</span>
+                <span class="skill-stage-badge">Actively Developing</span>
+              </div>
+              <h3 class="skill-category-title">Programming</h3>
+              <p class="skill-category-description">
+                Building foundational understanding of low-level systems, procedural programming, object-oriented principles, and scripting.
+              </p>
+            </div>
+            
+            <div class="skill-tech-pills">
+              <div class="tech-pill">
+                <span class="tech-pill-dot" aria-hidden="true"></span>
+                <span>C</span>
+              </div>
+              <div class="tech-pill">
+                <span class="tech-pill-dot" aria-hidden="true"></span>
+                <span>Java</span>
+              </div>
+              <div class="tech-pill">
+                <span class="tech-pill-dot" aria-hidden="true"></span>
+                <span>Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Data & Databases -->
+          <div class="skill-category-card reveal-init delay-1">
+            <div class="skill-card-top">
+              <div class="skill-category-meta">
+                <span class="skill-category-number">02 // DATA PERSISTENCE</span>
+                <span class="skill-stage-badge">Actively Developing</span>
+              </div>
+              <h3 class="skill-category-title">Data &amp; Databases</h3>
+              <p class="skill-category-description">
+                Studying relational data models, querying structures, entity relationships, and effective database management.
+              </p>
+            </div>
+            
+            <div class="skill-tech-pills">
+              <div class="tech-pill">
+                <span class="tech-pill-dot" aria-hidden="true"></span>
+                <span>SQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Engineering & Computer Science -->
+          <div class="skill-category-card reveal-init delay-2">
+            <div class="skill-card-top">
+              <div class="skill-category-meta">
+                <span class="skill-category-number">03 // COMPUTING FOUNDATIONS</span>
+                <span class="skill-stage-badge">Continuous Focus</span>
+              </div>
+              <h3 class="skill-category-title">Engineering &amp; Computer Science</h3>
+              <p class="skill-category-description">
+                Developing algorithmic rigor, time and space complexity intuition, and disciplined problem-solving methodologies.
+              </p>
+            </div>
+            
+            <div class="skill-tech-pills">
+              <div class="tech-pill">
+                <span class="tech-pill-dot" aria-hidden="true"></span>
+                <span>Data Structures &amp; Algorithms</span>
+              </div>
+              <div class="tech-pill">
+                <span class="tech-pill-dot" aria-hidden="true"></span>
+                <span>Problem Solving</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Cloud -->
+          <div class="skill-category-card reveal-init delay-3">
+            <div class="skill-card-top">
+              <div class="skill-category-meta">
+                <span class="skill-category-number">04 // INFRASTRUCTURE</span>
+                <span class="skill-stage-badge">Exploring &amp; Learning</span>
+              </div>
+              <h3 class="skill-category-title">Cloud Technologies</h3>
+              <p class="skill-category-description">
+                Exploring cloud computing paradigms, service architectures, deployment concepts, and scalable infrastructure fundamentals.
+              </p>
+            </div>
+            
+            <div class="skill-tech-pills">
+              <div class="tech-pill">
+                <span class="tech-pill-dot" aria-hidden="true"></span>
+                <span>Cloud Technologies</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Honest Engineering Philosophy Banner -->
+        <div class="skills-philosophy-banner reveal-init">
+          <div class="philosophy-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+          </div>
+          <div class="philosophy-text">
+            <strong>Foundational Approach:</strong> I intentionally avoid artificial proficiency bars or exaggerated claims. As a 2nd-year engineering student, my focus is on genuine comprehension, disciplined practice, and mastering the fundamentals that endure across the industry.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         FEATURED PROJECT SECTION (LOGIT)
+         ==================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        
+        <div class="section-header reveal-init">
+          <div class="section-kicker">
+            <span>// 03. Featured Project</span>
+          </div>
+          <h2 class="section-title">Practical work built through curiosity.</h2>
+          <p class="section-subtitle">
+            An exploration into software development and developer learning tools.
+          </p>
+        </div>
+
+        <article class="project-card reveal-init" id="projectLogit">
+          <div class="project-card-grid">
+            
+            <!-- Left Info Pane -->
+            <div class="project-info-pane">
+              <div>
+                <div class="project-meta-top">
+                  <span class="project-kicker">Featured Exploration</span>
+                  <span class="project-status-tag">
+                    <span class="status-dot-pulse" style="width: 5px; height: 5px;" aria-hidden="true"></span>
+                    <span>Building &amp; Learning</span>
+                  </span>
+                </div>
+
+                <h3 class="project-title">LOGIT</h3>
+                <div class="project-tagline">Code Assistance Platform</div>
+
+                <p class="project-description">
+                  LOGIT is a code assistance platform designed to help users understand code and learn programming concepts more effectively.
+                </p>
+
+                <div class="project-focus-list">
+                  <div class="project-focus-item">
+                    <svg class="project-focus-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Aims to demystify complex logic through guided code comprehension.</span>
+                  </div>
+                  <div class="project-focus-item">
+                    <svg class="project-focus-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Reinforces programming concepts by connecting syntax to practical meaning.</span>
+                  </div>
+                  <div class="project-focus-item">
+                    <svg class="project-focus-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Built as personal evidence of active learning, experimentation, and software craft.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <span class="project-note">// Project in active development</span>
+              </div>
+            </div>
+
+            <!-- Right Visual Code Assistant Concept Preview Pane -->
+            <div class="project-preview-pane">
+              <div class="terminal-window">
+                <div class="terminal-header">
+                  <div class="terminal-dots" aria-hidden="true">
+                    <span class="terminal-dot dot-red"></span>
+                    <span class="terminal-dot dot-yellow"></span>
+                    <span class="terminal-dot dot-green"></span>
+                  </div>
+                  <span class="terminal-title">logit-analyzer &mdash; concept.c</span>
+                  <span style="width: 32px;"></span>
+                </div>
+
+                <div class="terminal-body">
+                  <div class="code-line">
+                    <span class="line-num">1</span>
+                    <span><span class="code-comment">// Concept breakdown in LOGIT</span></span>
+                  </div>
+                  <div class="code-line">
+                    <span class="line-num">2</span>
+                    <span><span class="code-type">int</span> <span class="code-fn">binarySearch</span>(<span class="code-type">int</span> arr[], <span class="code-type">int</span> target) {</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="line-num">3</span>
+                    <span>&nbsp;&nbsp;<span class="code-type">int</span> low = 0, high = n - 1;</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="line-num">4</span>
+                    <span>&nbsp;&nbsp;<span class="code-keyword">while</span> (low &lt;= high) {</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="line-num">5</span>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-type">int</span> mid = low + (high - low) / 2;</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="line-num">6</span>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">if</span> (arr[mid] == target) <span class="code-keyword">return</span> mid;</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="line-num">7</span>
+                    <span>&nbsp;&nbsp;}</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="line-num">8</span>
+                    <span>}</span>
+                  </div>
+
+                  <!-- LOGIT Concept Explanation Module -->
+                  <div class="terminal-insight-box">
+                    <div class="insight-header">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 16v-4"></path>
+                        <path d="M12 8h.01"></path>
+                      </svg>
+                      <span>LOGIT Concept Insight</span>
+                    </div>
+                    <p class="insight-desc">
+                      Line 5 calculates the middle index using <code>low + (high - low) / 2</code> to prevent integer overflow in fixed-width systems.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         EDUCATION SECTION
+         ==================================================================== -->
+    <section class="section" id="education">
+      <div class="container">
+        
+        <div class="section-header reveal-init">
+          <div class="section-kicker">
+            <span>// 04. Education</span>
+          </div>
+          <h2 class="section-title">Academic background &amp; engineering studies.</h2>
+          <p class="section-subtitle">
+            Formal undergraduate training in computer science and engineering.
+          </p>
+        </div>
+
+        <div class="education-card reveal-init">
+          <div class="education-card-layout">
+            
+            <div class="education-icon-box" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+
+            <div class="education-details">
+              <div class="education-timeline-meta">
+                <span class="education-status-pill">Currently Enrolled &middot; 2nd Year</span>
+                <span class="education-year-pill">Class of 2025 &ndash; 2029</span>
+              </div>
+
+              <h3 class="education-degree">B.Tech in Computer Science &amp; Engineering</h3>
+              <div class="education-institution">REVA University</div>
+
+              <div class="education-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Bengaluru, Karnataka, India</span>
+              </div>
+
+              <p class="education-description">
+                Undergraduate coursework centered on core computing principles, programming paradigms, data structures, algorithms, databases, and foundational software engineering methodologies.
+              </p>
+
+              <div class="education-focus-badges">
+                <span class="edu-badge">Computer Science Fundamentals</span>
+                <span class="edu-badge">Data Structures</span>
+                <span class="edu-badge">Programming Paradigms</span>
+                <span class="edu-badge">Database Systems</span>
+                <span class="edu-badge">Engineering Mathematics</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         CONNECT / CONTACT SECTION
+         ==================================================================== -->
+    <section class="section" id="contact">
+      <div class="container contact-container">
+        
+        <div class="contact-card reveal-init">
+          <div class="contact-kicker">
+            <span>// 05. Get In Touch</span>
+          </div>
+
+          <h2 class="contact-heading">Let's connect and build something meaningful.</h2>
+          
+          <p class="contact-description">
+            I am always open to discussing technology, collaborative learning, software engineering practices, or new opportunities to grow.
+          </p>
+
+          <!-- Email Display & Copy Action Card -->
+          <div class="email-display-card">
+            <span class="email-address-text" id="emailAddress">rohansaburi26@gmail.com</span>
+            <div class="email-actions">
+              <button class="copy-email-btn" id="copyEmailBtn" aria-label="Copy email address to clipboard">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                  <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                </svg>
+                <span>Copy</span>
+              </button>
+
+              <a href="mailto:rohansaburi26@gmail.com" class="copy-email-btn" aria-label="Send email directly">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="m22 2-7 20-4-9-9-4Z"></path>
+                  <path d="M22 2 11 13"></path>
+                </svg>
+                <span>Email</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Social Channels Grid -->
+          <div class="contact-social-grid">
+            
+            <a href="https://github.com/rohansaburi" target="_blank" rel="noopener noreferrer" class="contact-channel-card" id="contactGithub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/rohan-saburi" target="_blank" rel="noopener noreferrer" class="contact-channel-card" id="contactLinkedin">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+
+            <a href="mailto:rohansaburi26@gmail.com" class="contact-channel-card" id="contactEmailLink">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              <span>Email Me</span>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        
+        <div class="footer-identity">
+          <div class="footer-name">Rohan Saburi</div>
+          <div class="footer-role">Aspiring Software Engineer &middot; B.Tech CSE, REVA University</div>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#skills" class="footer-link">Skills</a>
+          <a href="#projects" class="footer-link">Projects</a>
+          <a href="#education" class="footer-link">Education</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </nav>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          &copy; 2026 Rohan Saburi. Designed with precision &amp; authentic engineering craft.
+        </div>
+
+        <div class="footer-social-links">
+          <a href="https://github.com/rohansaburi" target="_blank" rel="noopener noreferrer" class="footer-icon-link" aria-label="GitHub Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/>
+            </svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/rohan-saburi" target="_blank" rel="noopener noreferrer" class="footer-icon-link" aria-label="LinkedIn Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+
+          <a href="mailto:rohansaburi26@gmail.com" class="footer-icon-link" aria-label="Direct Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+          </a>
+
+          <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top of page">
+            <span>Back to top</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m18 15-6-6-6 6"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification for Email Copy -->
+  <div class="toast-notification" id="copyToast" role="status" aria-live="polite">
+    <svg class="toast-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span>Email copied to clipboard!</span>
+  </div>
+
+  <!-- Main JavaScript Controller -->
+  <script src="js/main.js"></script>
+</body>
+</html>

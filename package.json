@@ -1,0 +1,27 @@
+{
+  "name": "rohan-saburi-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio of Rohan Saburi — Aspiring Software Engineer and B.Tech CSE student at REVA University",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohansaburi/rohan-saburi-portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "software-engineer",
+    "computer-science",
+    "reva-university",
+    "rohan-saburi"
+  ],
+  "author": "Rohan Saburi <rohansaburi26@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rohansaburi/rohan-saburi-portfolio/issues"
+  },
+  "homepage": "https://github.com/rohansaburi/rohan-saburi-portfolio#readme"
+}
